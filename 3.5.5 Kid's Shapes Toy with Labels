@@ -1,0 +1,52 @@
+speed(0)
+bgcolor("tan")
+
+def draw_half_circle():
+    pendown()
+    begin_fill()
+    color("gold")
+    write("Yellow Semicircle")
+    color("yellow")
+    circle(60,180)
+    end_fill()
+
+
+def draw_pentagon():
+    color("green")
+    pendown()
+    begin_fill()
+    write("Green Pentagon")
+    circle(-60,360,5)
+    end_fill()
+
+
+def draw_circle():
+    color("blue")
+    pendown()
+    begin_fill()
+    write("Blue Circle")
+    circle(60)
+    end_fill()
+
+
+def draw_square():
+    color("red")
+    pendown()
+    begin_fill()
+    write("Red Square")
+    circle(60,360,4)
+    end_fill()
+
+
+penup()
+setposition(-100,-150)
+draw_half_circle()
+penup()
+setposition(100,150)
+draw_circle()
+penup()
+setposition(-100,150)
+draw_square()
+penup()
+setposition(100,-150)
+draw_pentagon()
