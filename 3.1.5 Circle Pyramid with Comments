@@ -1,0 +1,22 @@
+penup()
+setposition(-100,-200) #moves turtle to bottom left of the grid world to correctly position
+
+for i in range(3):
+    "draws the first three circles, making the base of the pyramid"
+    "uses a for loop to draw three circles with less lines of code"
+    pendown()
+    circle(50)
+    penup()
+    forward(100)
+setposition(-50,-100) 
+#moves tracy in position for the second level of the pyramid"
+for x in range(2):
+    #"this draws the two circles in the middle section of the pyramid"
+    pendown()
+    circle(50)
+    penup()
+    forward(100)
+setposition(0,0)
+pendown()
+#and finally, the last circle, making the top of the pyramid
+circle(50)
