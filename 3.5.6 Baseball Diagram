@@ -1,0 +1,55 @@
+# Click run to load the background of the program
+
+# Replace 'pass' with the commands in your draw_base function
+def draw_base():
+    pass
+
+# Write the rest of your program below
+import turtle
+def draw_base():
+    pendown()
+    color("white")
+    begin_fill()
+    circle(10,360,4)
+    end_fill()
+    penup()
+    
+goto(100,-50)
+draw_base()
+goto(0,50)
+draw_base()
+goto(-100,-50)
+draw_base()
+
+goto(-3,-180)
+left(45)
+pendown()
+begin_fill()
+forward(25)
+left(45)
+forward(15)
+left(90)
+forward(30)
+left(90)
+forward(15)
+left(45)
+forward(25)
+end_fill()
+
+
+penup()
+goto(-15,-140)
+color("black")
+write("Home", font=("Arial", 10))
+
+goto(-20,-50)
+write("Pitcher", font=("Arial", 10))
+
+goto(95,-30)
+write("1st", font=("Arial", 10))
+
+goto(-5,70)
+write("2nd", font=("Arial", 10))
+
+goto(-105,-30)
+write("3rd", font=("Arial", 10))
