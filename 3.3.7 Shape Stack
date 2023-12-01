@@ -1,0 +1,23 @@
+def square():
+    for x in range(2):
+        forward(50)
+        left(90)
+        forward(50)
+        left(90)
+def draw_circle():
+    circle(25)
+penup()
+p = -200
+for i in range(4):
+    sety(p)
+    pendown()
+    square()
+    penup()
+    p += 50
+    sety(p)
+    pendown()
+    forward(25)
+    draw_circle()
+    backward(25)
+    penup()
+    p += 50
